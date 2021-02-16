@@ -9,11 +9,68 @@
   width: 80%;
   margin: auto;
 }
+.small_container{
+  width: 60%;
+  margin: auto;
+}
 body{
   font-family: 'Roboto', sans-serif;
 }
 .bg_grey{
   background-color: #f3f5f9;
+}
+/* tipo */
+h2{
+  font-size: 36px;
+  font-weight: 700;
+  color: #031b4e;
+  margin-bottom: 30px;
+}
+section p{
+  font-size: 20px;
+  color: #5b6987;
+  font-weight: 100;
+}
+.deploy-elements p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #5b6987;
+}
+.deploy_elements a{
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 70px;
+  color: #5b6987;
+}
+.deploy_elements li:hover{
+  border-left: 2px solid #136ffb;
+}
+.deploy_elements li:hover a{
+  text-decoration: none;
+  color: #031b4e;
+}
+a i{
+  margin-left: 5px;
+}
+.trust h3{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: #5b6987;
+}
+.trust a{
+  color: #136ffb;
+  font-size: 18px;
+  text-decoration: none;
+}
+h5{
+  font-size: 18px;
+  color: #031b4e;
+}
+.deploy_elements p{
+  font-size: 16px;
+  line-height: 25px;
+  color: #5b6987;
 }
 /* main */
 section{
@@ -28,24 +85,38 @@ section{
   text-align: center;
 }
 .partner-list{
-  display: flex;
   list-style: none;
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 .partner-list li{
-  flex-basis: calc(100% / 6)
+  flex-basis: calc(100% / 6);
 }
-.trust h3{
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 700;
-  color: #5b6987;
+/* section deploy&scale */
+.deploy_title{
+  text-align: center;
+  margin-bottom: 30px;
 }
-.trust a{
-  color: #136ffb;
-  font-size: 18px;
-  text-decoration: none;
+.deploy_elements{
+  display: flex;
+}
+.deploy-list{
+  list-style: none;
+  flex-basis: 25%;
+  margin-bottom: 40px;
+}
+.deploy-boxes{
+  flex-basis: 75%;
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.deploy_box{
+  flex-basis: calc(100% / 2);
+  padding-left: 20px;
+  min-height: 200px;
 }
 /* @@ media @@ */
 @media screen and (max-width: 992px) {
@@ -57,6 +128,10 @@ section{
   .container{
     width: 95%;
     margin: auto;
+  }
+  .deploy-boxes,
+  .deploy_elements{
+    display: block;
   }
 }
 @media screen and (max-width: 576px) {
